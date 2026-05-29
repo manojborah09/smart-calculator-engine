@@ -43,7 +43,7 @@ def infixToPostfix(s):
       while (stack and stack[-1] != '(' and precedence[chr] <= precedence[stack[-1]]):
         main_output.append(stack.pop())
 
-    stack.append(chr)
+      stack.append(chr)
 
   while stack:
     main_output.append(stack.pop())
